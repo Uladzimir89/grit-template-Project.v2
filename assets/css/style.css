@@ -14,13 +14,26 @@ html {
 h1 {
   font-family: "Roboto Slab", serif;
   font-size: 3.75rem;
-  letter-spacing: 5px;
+  letter-spacing: 0.08em;
   font-weight: 300;
   text-align: center;
+  line-height: 1.2;
 }
 a {
   text-decoration: none;
   color: #ffffff;
+}
+
+.btn {
+  flex-basis: 250px;
+  height: 60px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 2px solid #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.125rem;
+  letter-spacing: 0.1em;
 }
 
 .header {
@@ -70,19 +83,19 @@ a {
 
 .header-logo {
   font-size: 1.5rem;
-  letter-spacing: 6px;
+  letter-spacing: 0.22em;
 }
 
 .header-logo__link {
   display: block;
-  padding: 20px;
+  padding: 20px 20px 20px 0;
 }
 
 .header-logo__accent {
   border: 3px solid #d53d27;
   display: inline-block;
-  padding: 20px 5px 20px 5px;
-  margin-left: 5px;
+  padding: 14px 1px 13px 5px;
+  margin-right: 4px;
 }
 
 .header-navbar {
@@ -94,7 +107,7 @@ a {
 
 .header-navbar__list {
   list-style: none;
-  margin: 0;
+  margin: 0 -20px 0 0;
   padding: 0;
 
   display: grid;
@@ -107,7 +120,8 @@ a {
 }
 
 .header-navbar__link {
-  padding: 20px;
+  padding: 10px;
+  font-size: 1.125rem;
 }
 
 .header-content {
@@ -116,5 +130,11 @@ a {
 }
 
 .header-content__title {
-  margin: 0;
+  margin: 0 0 53px 0;
+}
+
+.header-content__actions {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
