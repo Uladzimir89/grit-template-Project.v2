@@ -138,3 +138,70 @@ a {
   justify-content: center;
   gap: 20px;
 }
+
+.skills {
+  padding: 10px;
+}
+
+.skills__container {
+  display: grid;
+  gap: 10px;
+  grid-template-areas: "a1 a1 a2 a3" "a4 a5 a5 a6" "a7 a8 a9 a6";
+
+  grid-template-rows: repeat(3, calc(33.33333vh - 40px / 3));
+}
+
+.skills__actions {
+}
+
+.skill-item {
+  position: relative;
+  background-color: #2d3651;
+}
+
+.skill-item:nth-child(1) {
+  grid-area: a1;
+}
+
+.skill-item:nth-child(2) {
+  grid-area: a2;
+}
+
+.skill-item:nth-child(3) {
+  grid-area: a3;
+}
+
+.skill-item:nth-child(4) {
+  grid-area: a4;
+}
+
+.skill-item:nth-child(5) {
+  grid-area: a5;
+}
+
+.skill-item:nth-child(6) {
+  grid-area: a6;
+}
+
+.skill-item:nth-child(7) {
+  grid-area: a7;
+}
+
+.skill-item:nth-child(8) {
+  grid-area: a8;
+}
+
+.skill-item:nth-child(9) {
+  grid-area: a9;
+}
+
+.skill-item__image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url(../img/img-html.png);
+  background-position: center;
+  background-size: cover;
+}
