@@ -25,15 +25,30 @@ a {
 }
 
 .btn {
-  flex-basis: 250px;
   height: 60px;
-  background-color: rgba(255, 255, 255, 0.1);
-  border: 2px solid #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 1.125rem;
   letter-spacing: 0.1em;
+  transition: background-color 0.5s;
+}
+
+.btn--light {
+  flex-basis: 250px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 2px solid #ffffff;
+}
+
+.btn--primary {
+  flex-basis: 350px;
+  background-color: rgb(45, 54, 81, 0.8);
+  border: 2px solid #2d3651;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #d66926;
 }
 
 .header {
@@ -122,6 +137,12 @@ a {
 .header-navbar__link {
   padding: 10px;
   font-size: 1.125rem;
+  transition: color 0.5s;
+}
+
+.header-navbar__link:hover,
+.header-navbar__link:focus {
+  color: #d66926;
 }
 
 .header-content {
@@ -141,12 +162,14 @@ a {
 
 .skills {
   padding: 10px;
+  margin-bottom: 30px;
 }
 
 .skills__container {
   display: grid;
   gap: 10px;
   grid-template-areas: "a1 a1 a2 a3" "a4 a5 a5 a6" "a7 a8 a9 a6";
+  margin-bottom: 20px;
 }
 
 @media (min-height: 691px) {
@@ -162,11 +185,26 @@ a {
 }
 
 .skills__actions {
+  display: flex;
+  justify-content: center;
+}
+
+.skill-item:hover .skill-item__link {
+  color: #d66926;
+}
+
+.skill-item:hover .skill-item__image {
+  transform: scale(1.1);
+}
+
+.skill-item:hover .skill-item__overlay {
+  opacity: 0.95;
 }
 
 .skill-item {
   position: relative;
   background-color: #2d3651;
+  overflow: hidden;
 }
 
 .skill-item:nth-child(1) {
@@ -223,6 +261,7 @@ a {
   height: 100%;
   align-items: center;
   justify-content: center;
+  transition: color 0.5s;
 }
 
 .skill-item__image {
@@ -233,6 +272,7 @@ a {
   left: 0;
   background-position: center;
   background-size: cover;
+  transition: transform 0.5s;
 }
 
 .skill-item__overlay {
@@ -243,4 +283,5 @@ a {
   left: 0;
   background-color: #2d3651;
   opacity: 0.8;
+  transition: opacity 0.5s;
 }
