@@ -390,6 +390,9 @@ a {
   -o-transition: background-color 0.5s;
   transition: background-color 0.5s;
 }
+.btn:hover, .btn:focus {
+  background-color: #d66926;
+}
 
 .btn--light {
   width: 250px;
@@ -403,11 +406,6 @@ a {
   height: 60px;
   background-color: rgbа(#2d3651, 0.8);
   border: 2px solid #2d3651;
-}
-
-.btn:hover,
-.btn:focus {
-  background-color: #d66926;
 }
 
 .header {
@@ -442,7 +440,6 @@ a {
   width: 100%;
   /*background-color: red;*/
 }
-
 .header-menu__container {
   display: grid;
   grid-template-columns: auto 1fr;
@@ -464,12 +461,10 @@ a {
   font-size: 1.5rem;
   letter-spacing: 0.22em;
 }
-
 .header-logo__link {
   display: block;
   padding: 20px 20px 20px 0;
 }
-
 .header-logo__accent {
   border: 3px solid #d53d27;
   display: inline-block;
@@ -480,7 +475,6 @@ a {
 .header-navbar__btn {
   display: none;
 }
-
 .header-navbar__list {
   list-style: none;
   margin: 0 -20px 0 0;
@@ -493,11 +487,9 @@ a {
       -ms-flex-pack: end;
           justify-content: end;
 }
-
 .header-navbar__item {
   margin: 0 10px;
 }
-
 .header-navbar__link {
   padding: 10px;
   font-size: 1.125rem;
@@ -505,9 +497,7 @@ a {
   -o-transition: color 0.5s;
   transition: color 0.5s;
 }
-
-.header-navbar__link:hover,
-.header-navbar__link:focus {
+.header-navbar__link:hover, .header-navbar__link:focus {
   color: #d66926;
 }
 
@@ -515,11 +505,9 @@ a {
   position: relative;
   z-index: 1;
 }
-
 .header-content__title {
   margin: 0 0 53px 0;
 }
-
 .header-content__actions {
   display: -webkit-box;
   display: -webkit-flex;

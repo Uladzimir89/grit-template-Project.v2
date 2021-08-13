@@ -1,9 +1,9 @@
-@import "../../libs/normalize.css/normalize.scss";
+@import '../../libs/normalize.css/normalize.scss';
 
 //@use "../../libs/normalize.css/normalize";
 
-@import "presets/skin";
-@import "presets/variables";
+@import 'presets/skin';
+@import 'presets/variables';
 // везьде вместо @import было @use "cpresets/skin ( и тд.)";
 
 //@use "mixins/mixins";
@@ -12,14 +12,14 @@
 
 //@use "common/typography";
 
-@import "common/classes";
-@import "components/header/header";
-@import "components/header/header-overlay";
-@import "components/header/header-menu";
-@import "components/header/header-logo";
-@import "components/header/header-navbar";
-@import "components/header/header-content";
-@import "components/sections/skills/skills";
+@import 'common/classes';
+@import 'components/header/header';
+@import 'components/header/header-overlay';
+@import 'components/header/header-menu';
+@import 'components/header/header-logo';
+@import 'components/header/header-navbar';
+@import 'components/header/header-content';
+@import 'components/sections/skills/skills';
 // везьде вместо @import было @use "common/classes ( и тд.)";
 
 //@use "components/sections/skills/skill-item";
@@ -29,45 +29,60 @@
 
 //@use "components/footer/footer";
 
-@media (max-width: 992px) {
-  h1 {
-    font-size: 2.5rem;
-  }
-  .btn--light {
-    width: 200px;
-    height: 50px;
-    font-size: 1rem;
-  }
+@media (max-width: $lg)
+{
+    h1
+    {
+        font-size: 2.5rem;
+    }
+    .btn--light
+    {
+        font-size: 1rem;
+
+        width: 200px;
+        height: 50px;
+    }
 }
 
-@media (max-width: 758px) {
-  h1 {
-    font-size: 1.875rem;
-  }
-  .btn--light {
-    width: 170px;
-    height: 40px;
-  }
+@media (max-width: 758px)
+{
+    h1
+    {
+        font-size: 1.875rem;
+    }
+    .btn--light
+    {
+        width: 170px;
+        height: 40px;
+    }
 }
 
-@media (max-width: 576px) {
-  .btn--primary {
-    width: 100%;
-  }
-  .header-content__actions {
-    flex-direction: column;
-    align-items: center;
-  }
+@media (max-width: $sm)
+{
+    .btn--primary
+    {
+        width: 100%;
+    }
+    .header-content__actions
+    {
+        flex-direction: column;
+
+        align-items: center;
+    }
 }
 
-@media (min-height: 691px) {
-  .skills__container {
-    grid-auto-rows: calc(33.33333vh - 13.33333px);
-  }
+@media (min-height: 691px)
+{
+    .skills__container
+    {
+        grid-auto-rows: calc(33.33333vh - 13.33333px);
+    }
 }
 
-@media (max-height: 690px) {
-  .skills__container {
-    grid-auto-rows: calc(230px - 13.33333px);
-  }
+@media (max-height: 690px)
+{
+    .skills__container
+    {
+        grid-auto-rows: calc(230px - 13.33333px);
+    }
 }
