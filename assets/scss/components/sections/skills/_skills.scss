@@ -16,7 +16,7 @@
 }
 
 .skill-item:hover .skill-item__link {
-  color: #d66926;
+  color: $color-accent;
 }
 
 .skill-item:hover .skill-item__image {
@@ -29,7 +29,7 @@
 
 .skill-item {
   position: relative;
-  background-color: #2d3651;
+  background-color: $color-primary;
   overflow: hidden;
 }
 
@@ -107,7 +107,7 @@
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: #2d3651;
+  background-color: $color-primary;
   opacity: 0.8;
   transition: opacity 0.5s;
 }

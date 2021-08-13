@@ -2,8 +2,9 @@
 
 //@use "../../libs/normalize.css/normalize";
 
-//@use "presets/skin";
-//@use "presets/variables";
+@import "presets/skin";
+@import "presets/variables";
+// везьде вместо @import было @use "cpresets/skin ( и тд.)";
 
 //@use "mixins/mixins";
 //@use "mixins/mixins-media";
