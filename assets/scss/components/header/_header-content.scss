@@ -1,18 +1,22 @@
-.header-content
-{
-    position: relative;
-    z-index: 1;
+.header-content {
+  position: relative;
+  z-index: 1;
 
-    &__title
-    {
-        margin: 0 0 53px 0;
-    }
+  &__container {
+    max-width: $ul;
+    margin: auto;
+    padding-right: $gap;
+    padding-left: $gap;
+  }
 
-    &__actions
-    {
-        display: flex;
+  &__title {
+    margin: 0 0 53px 0;
+  }
 
-        justify-content: center;
-        gap: $gap;
-    }
+  &__actions {
+    display: flex;
+
+    justify-content: center;
+    gap: $gap;
+  }
 }

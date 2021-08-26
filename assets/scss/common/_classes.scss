@@ -1,73 +1,64 @@
 *,
 ::before,
-::after
-{
-    box-sizing: border-box;
+::after {
+  box-sizing: border-box;
 }
 
-html
-{
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
 
-    overflow-y: scroll;
+  overflow-y: scroll;
 
-    letter-spacing: .1em;
+  letter-spacing: 0.1em;
 
-    color: $color-gray;
+  color: $color-gray;
 }
 
-h1
-{
-    font-family: 'Roboto Slab', serif;
-    font-size: 3.75rem;
-    font-weight: 300;
-    line-height: 1.2;
+h1 {
+  font-family: "Roboto Slab", serif;
+  font-size: 3.75rem;
+  font-weight: 300;
+  line-height: 1.2;
 
-    text-align: center;
-    letter-spacing: .08em;
+  text-align: center;
+  letter-spacing: 0.08em;
 }
 
-a
-{
-    text-decoration: none;
-
-    color: $color-light;
+a {
+  text-decoration: none;
+  color: $color-light;
 }
 
-.btn
-{
-    font-size: 1.125rem;
+.btn {
+  font-size: 1.125rem;
 
-    display: flex;
+  display: flex;
 
-    transition: background-color .5s;
-    letter-spacing: .1em;
+  transition: background-color 0.5s;
+  letter-spacing: 0.1em;
 
-    align-items: center;
-    justify-content: center;
+  align-items: center;
+  justify-content: center;
 
-    &:hover,
-    &:focus
-    {
-        background-color: $color-accent;
-    }
+  &:hover,
+  &:focus {
+    background-color: $color-accent;
+  }
 }
 
-.btn--light
-{
-    width: 250px;
-    height: 60px;
+.btn--light {
+  width: 250px;
+  height: 60px;
 
-    border: 2px solid $color-light;
-    background-color: rgba(255, 255, 255, .1);
+  border: 2px solid $color-light;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
-.btn--primary
-{
-    width: 350px;
-    height: 60px;
+.btn--primary {
+  width: 350px;
+  height: 60px;
 
-    border: 2px solid $color-primary;
-    background-color: rgbа($color-primary, .8);
+  border: 2px solid $color-primary;
+  background-color: rgba($color-primary, 0.8);
 }
