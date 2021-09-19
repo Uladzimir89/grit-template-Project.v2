@@ -1,5 +1,5 @@
 .skills {
-  margin-bottom: 30px;
+  margin-bottom: $gap / 2 * 3;
   padding: $gap / 2;
 
   &__container {
@@ -8,12 +8,22 @@
     margin-bottom: $gap;
 
     gap: $gap / 2;
-    grid-template-areas: "a1 a1 a2 a3" "a4 a5 a5 a6" "a7 a8 a9 a6";
+
+    @include lg-min {
+      grid-template-areas: "a1 a1 a2 a3" "a4 a5 a5 a6" "a7 a8 a9 a6";
+    }
+
+    @media (min-height: 691px) {
+      grid-auto-rows: calc(33.33333vh - 13.33333px);
+    }
+
+    @media (max-height: 690px) {
+      grid-auto-rows: calc(230px - 13.33333px);
+    }
   }
 
   &__actions {
     display: flex;
-
     justify-content: center;
   }
 }

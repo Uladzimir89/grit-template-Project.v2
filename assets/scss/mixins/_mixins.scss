@@ -1,5 +1,21 @@
 @use '../presets' as *;
 
+@mixin abs-position($t: 0, $r: 0, $b: 0, $l: 0) {
+  position: absolute;
+  top: $t;
+  right: $r;
+  bottom: $b;
+  left: $l;
+}
+// @mixin abs-position уже был в примере, можно удалить (15.09)
+
+@mixin unlist($m: 0, $p: 0) {
+  list-style: none;
+  margin: $m;
+  padding: $p;
+}
+// @mixin unlist уже был в примере, можно удалить (15.09)
+
 @mixin text-shortener {
   display: block;
   overflow: hidden;

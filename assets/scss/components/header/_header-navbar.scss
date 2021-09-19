@@ -5,14 +5,9 @@
 
   &__list {
     display: grid;
-
-    margin: 0 -$gap 0 0;
-    padding: 0;
-
-    list-style: none;
-
-    grid-template-columns: repeat(auto-fit, minmax(50px, max-content));
     justify-content: end;
+    grid-template-columns: repeat(auto-fit, minmax(50px, max-content));
+    @include unlis(0 -$gap 0 0);
   }
 
   &__item {
@@ -20,11 +15,11 @@
   }
 
   &__link {
-    font-size: 1.125rem;
-
     padding: $gap / 2;
 
     transition: color 0.5s;
+
+    font-size: 1.125rem;
 
     &:hover,
     &:focus {

@@ -3,10 +3,7 @@
   z-index: 1;
 
   &__container {
-    max-width: $ul;
-    margin: auto;
-    padding-right: $gap;
-    padding-left: $gap;
+    @extend %container;
   }
 
   &__title {
@@ -15,8 +12,13 @@
 
   &__actions {
     display: flex;
-
     justify-content: center;
+
     gap: $gap;
+
+    @media (max-width: $sm) {
+      align-items: center;
+      flex-direction: column;
+    }
   }
 }

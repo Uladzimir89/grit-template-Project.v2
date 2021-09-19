@@ -1,18 +1,16 @@
-.header
-{
-    position: relative;
+.header {
+  position: relative;
 
-    display: grid;
+  display: grid;
+  align-content: center;
 
-    min-height: 100vh;
-    padding: 100px 0;
+  min-height: 100vh;
+  padding: 100px 0;
 
-    color: $color-light;
-    background-color: $color-primary;
-    background-image: url(../img/img-header.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-
-    align-content: center;
+  color: $color-light;
+  background-color: $color-primary;
+  background-image: url(../img/img-header.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
