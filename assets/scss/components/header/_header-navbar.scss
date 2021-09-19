@@ -7,15 +7,15 @@
     display: grid;
     justify-content: end;
     grid-template-columns: repeat(auto-fit, minmax(50px, max-content));
-    @include unlis(0 -$gap 0 0);
+    @include unlist(0 -$gap 0 0);
   }
 
   &__item {
-    margin: 0 $gap / 2;
+    margin: 0 $gap-sm;
   }
 
   &__link {
-    padding: $gap / 2;
+    padding: $gap-sm;
 
     transition: color 0.5s;
 

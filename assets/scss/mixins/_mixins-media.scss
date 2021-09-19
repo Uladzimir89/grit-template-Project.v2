@@ -1,4 +1,5 @@
-@use '../presets' as *;
+@import "../presets" as;
+// @use '../presets' as *; так было 19,09, но выдовало ошибку
 
 /* ul */
 @mixin ul-min {

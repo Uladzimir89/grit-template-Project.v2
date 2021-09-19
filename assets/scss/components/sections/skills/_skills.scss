@@ -1,16 +1,36 @@
 .skills {
-  margin-bottom: $gap / 2 * 3;
-  padding: $gap / 2;
+  @include sm-min {
+    padding: $gap-sm;
+    margin-bottom: $gap-sm * 3;
+  }
+
+  @include sm {
+    padding: $gap;
+  }
 
   &__container {
     display: grid;
 
     margin-bottom: $gap;
 
-    gap: $gap / 2;
-
     @include lg-min {
       grid-template-areas: "a1 a1 a2 a3" "a4 a5 a5 a6" "a7 a8 a9 a6";
+      gap: $gap-sm;
+    }
+
+    @include lg-md {
+      grid-template-areas: "a1 a1 a2" "a3 a4 a4" "a5 a5 a6" "a7 a8 a6" "a7 a9 a9";
+      gap: $gap-sm;
+    }
+
+    @include md-sm {
+      grid-template-areas: "a1 a2" "a3 a2" "a4 a4" "a5 a6" "a5 a7" "a8 a9";
+      gap: $gap-sm;
+    }
+
+    @include sm {
+      grid-template-areas: "a1" "a2" "a3" "a4" "a5" "a6" "a7" "a8" "a9";
+      gap: $gap;
     }
 
     @media (min-height: 691px) {
