@@ -1,15 +1,23 @@
-.header-menu {
-  position: absolute;
-  z-index: 1;
+.header-menu
+{
+    position: absolute;
+    z-index: 1;
 
-  width: 100%;
+    width: 100%;
 
-  &__container {
-    display: grid;
-    align-items: center;
+    @include md
+    {
+        background-color: rgba($color-gray-dark, .25);
 
-    grid-template-columns: auto 1fr;
+        @include box-shadow;
+    }
 
-    @extend %container;
-  }
+    &__container
+    {
+        display: grid;
+
+        align-items: center;
+        grid-template-columns: auto 1fr;
+        @extend %container;
+    }
 }
