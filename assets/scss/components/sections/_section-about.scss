@@ -1,0 +1,61 @@
+.section-about {
+  background-color: #e5e5e5;
+  padding: 100px 0;
+  letter-spacing: 0.055em;
+}
+
+.section-about-container {
+  max-width: $ul;
+  display: grid;
+  grid-template-columns: 1fr 271px;
+  margin: auto;
+  padding: 0 20px 0 20px;
+  gap: 100px;
+}
+
+.section-about_content {
+}
+
+.section-about_title {
+  font-size: 2.5rem;
+  line-height: 1.2em;
+  color: $color-primary;
+  margin-bottom: 48px;
+  font-family: "Roboto Slab", serif;
+  letter-spacing: 0.1em;
+}
+
+.section-about_content--p {
+  padding-bottom: 18px;
+  font-size: 1.125rem;
+  position: relative;
+
+  &:first-of-type {
+    margin-top: -5px;
+  }
+
+  &:first-of-type::after {
+    position: absolute;
+    top: 0;
+    height: 200px;
+    width: 2px;
+    content: "";
+    background-color: rgba(99, 117, 136, 0.1);
+    margin-left: 51px;
+  }
+
+  &:last-of-type {
+    margin-bottom: -18px;
+  }
+}
+
+.image-light {
+  display: grid;
+  align-content: center;
+  justify-items: center;
+}
+
+img {
+  height: 480px;
+  width: 267px;
+}

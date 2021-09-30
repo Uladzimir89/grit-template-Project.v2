@@ -1,0 +1,45 @@
+.post-container {
+  display: grid;
+  max-width: $ul;
+  margin: auto;
+  padding-top: 100px;
+}
+
+.post-title {
+  font-size: 40px;
+  font-family: "Roboto Slab", serif;
+  color: $color-primary;
+  letter-spacing: 0.1em;
+  line-height: 1.2em;
+}
+
+.post-block {
+  display: grid;
+  grid-template-areas: "a1 a1 a2 a3" "a4 a5 a6 a6";
+}
+
+.post-block-item {
+}
+
+@for $i from 1 through 6 {
+  .post-block-item:nth-child(#{$i}) {
+    grid-area: a#{$i};
+  }
+}
+
+.post-block-image {
+  background-color: darkgreen;
+  background-size: cover;
+}
+
+.post-blocks-contet {
+  background-color: darkkhaki;
+}
+
+.post-block-title {
+  background-color: darkmagenta;
+}
+
+.post-block_text {
+  background-color: darkslateblue;
+}

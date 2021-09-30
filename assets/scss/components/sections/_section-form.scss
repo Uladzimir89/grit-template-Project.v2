@@ -1,0 +1,37 @@
+.form {
+  background-color: $color-primary;
+  padding: 30px 0;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.form-item {
+}
+
+.form-item__input,
+.btn-sub--primary {
+  width: 420px;
+  height: 60px;
+  font-size: 1.125rem;
+  border-color: rgba(255, 255, 255, 0);
+  border-bottom-color: rgba(255, 255, 255, 0.25);
+}
+
+.form-item__input {
+  padding-left: 30px;
+  background-color: rgba(255, 255, 255, 0.05);
+  letter-spacing: 0.15em;
+}
+
+.btn-sub {
+}
+
+.btn-sub--primary {
+  color: $color-light;
+  background-color: #424b63;
+  letter-spacing: 0.1em;
+}
