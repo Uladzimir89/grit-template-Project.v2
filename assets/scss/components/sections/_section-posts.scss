@@ -3,10 +3,13 @@
   max-width: $ul;
   margin: auto;
   padding-top: 100px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .post-title {
   font-size: 40px;
+  margin-bottom: 48px;
   font-family: "Roboto Slab", serif;
   color: $color-primary;
   letter-spacing: 0.1em;
@@ -16,6 +19,8 @@
 .post-block {
   display: grid;
   grid-template-areas: "a1 a1 a2 a3" "a4 a5 a6 a6";
+  gap: 20px;
+  padding-bottom: 20px;
 }
 
 .post-block-item {
@@ -27,19 +32,54 @@
   }
 }
 
-.post-block-image {
-  background-color: darkgreen;
-  background-size: cover;
+.post-block-link {
+  display: grid;
+  overflow: hidden;
+  height: 100%;
+  grid-template-rows: 300px 1fr;
 }
 
-.post-blocks-contet {
-  background-color: darkkhaki;
+.post-block-image {
+}
+
+.post-block-image img {
+}
+
+.post-blocks-content {
+  text-align: center;
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  background-color: #eeeeee;
+  padding: 20px;
 }
 
 .post-block-title {
-  background-color: darkmagenta;
+  letter-spacing: 0.05em;
+  margin: 18px 0;
+  color: #637588;
+  font-size: 18px;
+  font-family: "Roboto Slab", serif;
 }
 
 .post-block_text {
-  background-color: darkslateblue;
+  margin: 16px 0 16px;
+  letter-spacing: 0;
+  color: #637588;
+  text-align: center;
+}
+
+.btn-post {
+  display: grid;
+  justify-content: center;
+}
+
+.btn-post--primary {
+  height: 60px;
+  width: 350px;
+  border-color: $color-primary;
+  color: $color-light;
+  font-size: 18px;
+  background-color: rgba(45, 54, 81, 0.8);
+  letter-spacing: 0.1em;
 }

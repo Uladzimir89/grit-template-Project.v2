@@ -1,0 +1,26 @@
+.footer {
+  background-color: $color-primary;
+  padding: 50px 20px 70px;
+}
+
+.footer-container {
+}
+
+.footer-socials {
+}
+
+.footer-list {
+  display: grid;
+  justify-items: center;
+  justify-content: center;
+  list-style: none;
+  grid-template-columns: repeat(auto-fit, minmax(50px, max-content));
+}
+
+.footer-link {
+  padding: 10px;
+}
+
+.fab {
+  font-size: 36px;
+}
