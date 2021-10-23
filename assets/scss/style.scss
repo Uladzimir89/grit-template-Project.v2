@@ -1,28 +1,28 @@
-@import '../../libs/normalize.css/normalize.scss';
+@import "../../libs/normalize.css/normalize.scss";
 
-@import '../../libs/normalize.css/normalize';
+@import "../../libs/normalize.css/normalize";
 
-@import 'presets/skin';
-@import 'presets/variables';
-@import 'mixins/mixins';
-@import 'mixins/mixins-media';
-@import 'mixins/extends';
+@import "presets/skin";
+@import "presets/variables";
+@import "mixins/mixins";
+@import "mixins/mixins-media";
+@import "mixins/extends";
 
-@import 'common/typography';
+@import "common/typography";
 
-@import 'common/classes';
-@import 'components/header/header';
-@import 'components/header/header-overlay';
-@import 'components/header/header-menu';
-@import 'components/header/header-logo';
-@import 'components/header/header-navbar';
-@import 'components/header/header-content';
-@import 'components/sections/skills/skills';
-@import 'components/sections/skills/skill-item';
+@import "common/classes";
+@import "components/header/header";
+@import "components/header/header-overlay";
+@import "components/header/header-menu";
+@import "components/header/header-logo";
+@import "components/header/header-navbar";
+@import "components/header/header-content";
+@import "components/sections/skills/skills";
+@import "components/sections/skills/skill-item";
 
-@import 'components/sections/section-about';
-@import 'components/sections/section-form';
-@import 'components/sections/section-posts';
+@import "components/sections/section-about";
+@import "components/sections/section-form";
+@import "components/sections/section-posts";
 
-@import 'components/footer/footer';
+@import "components/footer/footer";
 // везьде вместо @import было @use "common/classes ( и тд.)";
