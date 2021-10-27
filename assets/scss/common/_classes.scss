@@ -1,108 +1,92 @@
 *,
 ::before,
-::after
-{
-    box-sizing: border-box;
+::after {
+  box-sizing: border-box;
 }
 
-html
-{
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
 
-    overflow-y: scroll;
+  overflow-y: scroll;
 
-    letter-spacing: .1em;
+  letter-spacing: 0.1em;
 
-    color: $color-gray;
+  color: $color-gray;
 }
 
-h1
-{
-    font-family: 'Roboto Slab', serif;
-    font-weight: 300;
-    line-height: 1.2;
+h1 {
+  font-family: "Roboto Slab", serif;
+  font-weight: 300;
+  line-height: 1.2;
 
-    text-align: center;
-    letter-spacing: .08em;
+  text-align: center;
+  letter-spacing: 0.08em;
 
-    @include lg-min
-    {
-        font-size: 3.75rem;
-    }
-    @include lg-md
-    {
-        font-size: 2.5rem;
-    }
-    @include md
-    {
-        font-size: 1.875rem;
-    }
+  @include lg-min {
+    font-size: 3.75rem;
+  }
+  @include lg-md {
+    font-size: 2.5rem;
+  }
+  @include md {
+    font-size: 1.875rem;
+  }
 }
 
-a
-{
-    text-decoration: none;
+a {
+  text-decoration: none;
 
-    color: $color-light;
+  color: $color-light;
 }
 
-.btn
-{
-    display: flex;
+.btn {
+  display: flex;
 
-    transition: background-color .5s;
-    letter-spacing: .1em;
+  transition: background-color 0.5s;
+  letter-spacing: 0.1em;
 
-    align-items: center;
-    justify-content: center;
+  align-items: center;
+  justify-content: center;
 
-    &:hover,
-    &:focus
-    {
-        background-color: $color-accent;
-    }
+  &:hover,
+  &:focus {
+    background-color: $color-accent;
+  }
 }
 
-.btn--light
-{
-    border: 2px solid $color-light;
-    background-color: rgba($color-light, .1);
+.btn--light {
+  border: 2px solid $color-light;
+  background-color: rgba($color-light, 0.1);
 
-    @include lg-min
-    {
-        font-size: 1.125rem;
-
-        width: 250px;
-        height: 60px;
-    }
-    @include lg-md
-    {
-        width: 200px;
-        height: 50px;
-    }
-    @include md
-    {
-        width: 170px;
-        height: 40px;
-    }
-}
-
-.btn--primary
-{
+  @include lg-min {
     font-size: 1.125rem;
 
+    width: 250px;
     height: 60px;
+  }
+  @include lg-md {
+    width: 200px;
+    height: 50px;
+  }
+  @include md {
+    width: 170px;
+    height: 40px;
+  }
+}
 
-    border: 2px solid $color-primary;
-    background-color: rgba($color-primary, .8);
+.btn--primary {
+  font-size: 1.125rem;
 
-    @include sm-min
-    {
-        width: 350px;
-    }
-    @include sm
-    {
-        width: 100%;
-    }
+  height: 60px;
+
+  border: 2px solid $color-primary;
+  background-color: rgba($color-primary, 0.8);
+
+  @include sm-min {
+    width: 350px;
+  }
+  @include sm {
+    width: 100%;
+  }
 }
